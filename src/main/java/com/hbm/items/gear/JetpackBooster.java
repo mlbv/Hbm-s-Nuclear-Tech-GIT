@@ -2,7 +2,9 @@ package com.hbm.items.gear;
 
 import com.hbm.capability.HbmCapability;
 import com.hbm.capability.HbmCapability.IHBMData;
+import com.hbm.inventory.fluid.FluidType;
 import com.hbm.items.armor.JetpackBase;
+import com.hbm.items.armor.JetpackFueledBase;
 import com.hbm.lib.HBMSoundHandler;
 import com.hbm.packet.AuxParticlePacketNT;
 import com.hbm.packet.PacketDispatcher;
@@ -27,12 +29,12 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class JetpackBooster extends JetpackBase {
+public class JetpackBooster extends JetpackFueledBase {
 
 	private ModelJetPack model;
 	public static int maxFuel = 750;
 
-	public JetpackBooster(ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn, Fluid fuel, int maxFuel, String s) {
+	public JetpackBooster(ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn, FluidType fuel, int maxFuel, String s) {
 		super(materialIn, renderIndexIn, equipmentSlotIn, fuel, maxFuel, s);
 	}
 	
