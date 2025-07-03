@@ -3,7 +3,9 @@ package com.hbm.items.gear;
 import com.hbm.capability.HbmCapability;
 import com.hbm.capability.HbmCapability.IHBMData;
 import com.hbm.handler.HbmKeybinds.EnumKeybind;
+import com.hbm.inventory.fluid.FluidType;
 import com.hbm.items.armor.JetpackBase;
+import com.hbm.items.armor.JetpackFueledBase;
 import com.hbm.lib.HBMSoundHandler;
 import com.hbm.main.MainRegistry;
 import com.hbm.packet.AuxParticlePacketNT;
@@ -23,10 +25,10 @@ import net.minecraftforge.fml.common.network.NetworkRegistry.TargetPoint;
 
 import java.util.List;
 
-public class JetpackRegular extends JetpackBase {
+public class JetpackRegular extends JetpackFueledBase {
 
-	public JetpackRegular(ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn, Fluid fuel, int maxFuel, String s) {
-		super(materialIn, renderIndexIn, equipmentSlotIn, fuel, maxFuel, s);
+	public JetpackRegular(FluidType fuel, int maxFuel, String s) {
+		super(fuel, maxFuel, s);
 	}
 
 	@Override
