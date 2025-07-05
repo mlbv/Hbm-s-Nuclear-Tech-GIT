@@ -6,7 +6,6 @@ import com.hbm.inventory.CentrifugeRecipes;
 import com.hbm.inventory.DFCRecipes;
 import com.hbm.inventory.ShredderRecipes;
 import com.hbm.inventory.gui.*;
-import com.hbm.inventory.recipes.RBMKOutgasserRecipes;
 import com.hbm.items.EffectItem;
 import com.hbm.items.ModItems;
 import com.hbm.items.machine.ItemFELCrystal.EnumWavelengths;

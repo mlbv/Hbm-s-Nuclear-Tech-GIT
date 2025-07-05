@@ -1,7 +1,6 @@
 package com.hbm.entity.projectile;
 
 import com.hbm.items.ModItems;
-import com.hbm.lib.ForgeDirection;
 import com.hbm.lib.ModDamageSource;
 import com.hbm.packet.AuxParticlePacketNT;
 import com.hbm.packet.PacketDispatcher;

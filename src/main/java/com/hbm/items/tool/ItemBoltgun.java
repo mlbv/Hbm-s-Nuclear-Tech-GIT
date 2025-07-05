@@ -3,7 +3,6 @@ package com.hbm.items.tool;
 import api.hbm.block.IToolable;
 import api.hbm.block.IToolable.ToolType;
 import com.hbm.handler.NTMToolHandler;
-import com.hbm.inventory.RecipesCommon;
 import com.hbm.inventory.material.Mats;
 import com.hbm.items.IAnimatedItem;
 import com.hbm.items.ModItems;
@@ -33,12 +32,13 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.oredict.OreDictionary;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-import static com.hbm.inventory.RecipesCommon.*;
 import static com.hbm.inventory.RecipesCommon.AStack;
+import static com.hbm.inventory.RecipesCommon.MetaBlock;
 
 public class ItemBoltgun extends Item implements IAnimatedItem {
 
